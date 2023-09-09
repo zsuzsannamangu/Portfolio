@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title>Zsuzsanna's portfolio</title>
     </head>
     <!--end of head-->
@@ -17,7 +18,7 @@
             <a class="active" href="#Home">Home</a>
             <a href="#About">About</a>
             <a href="#Projects">Projects</a>
-            <a href="#Contact">Contact</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="Contact">Contact</a>
         </div>
         <!--end of navbar-->
 
@@ -40,6 +41,29 @@
             </strong>
         </div>
 
+        <!--Slideshow-->
+
+        <div id="slideshow">
+            <div>
+              <img src="Images/css+html.png">
+            </div>
+            <div>
+                <img src="Images/JS.png">
+            </div>
+            <div>
+                <img src="Images/Sql.png">
+            </div>
+            <div>
+                <img src="Images/Python_logo_51.svg">
+            </div>
+            <div>
+                <img src="Images/Csharp.png">
+            </div>
+        </div>
+
+        <!--End of Slideshow-->
+
+
         <!--About-->
         <div class="Row" id="About">
             <!--Left column-->
@@ -54,7 +78,7 @@
                     <br>
                     <br>HTML, CSS, JavaScript, SQL, C#, Python
                     <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                    <br>I am a full-stack developer and would love to work with you on your project. <a onclick="openForm()" ondblclick="closeForm()" class="Contact">Contact</a> me below!
                 </p>
             </div>
         </div>
@@ -69,30 +93,31 @@
                 </p>
             </div>
             <!--Right column-->
+
             <div class="Column_2">
                 <a href="https://github.com/zsuzsannamangu" target="_blank"><img src="./Images/Projects3.jpg" alt="Projects"></a>
             </div>
         </div>
 
-        <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="./Images/Contact2.jpg" alt="Contact_Image">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <form action="https://formspree.io/f/xknljzwo" method="POST">
-                    <label>Name:</label>
-                        <input type="text" placeholder="Your name">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Your email">
-                    <label>Message:</label>
-                        <input id="message" type="text" id="Message" name="Message" placeholder="Your message">
-                        <input type="submit" value="SUBMIT">
-                </form>
-            </div>
+        <!--Contact form--->
+
+        <button class="open-button" onclick="openForm()">Contact</button>
+
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/f/xknljzwo" method="POST" class="form-container">
+
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Your name" name="name" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Your email" name="email" required>
+
+                <label for="msg"><b>Message</b></label>
+                <input type="text" placeholder="Your message" name="msg" required>
+
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
         </div>
 
         <!--Footer section-->
@@ -102,6 +127,8 @@
                 <br>
             </p>
         </footer>
+
+        <script src="js/portfolio.js"></script>
 
     </body>
     <!--end of body-->

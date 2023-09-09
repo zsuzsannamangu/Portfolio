@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0%; /*ensures content displays all the way to user's browser*/
 }
@@ -46,7 +50,7 @@ a {
     color: rgb(79, 79, 244);
 }
 
-img {
+.Row img {
     filter: grayscale(40%); /* This rids our pictures of 40% of their color */
     border-radius: 5px;
     max-width: 100%; /* Ensures all images stay within the width of their container */
@@ -56,10 +60,19 @@ img {
     margin-right: auto;
 }
 
-img:hover {
+.Row img:hover {
 	filter: grayscale(3%);  /* Brings back most of the image's color when hovered over */
     transition: transform 1s; /* Transition lasts 1 second */
 	transform: scale(1.1); /* Image is increased slightly when hovered over */
+}
+
+img {
+    border-radius: 5px;
+    max-width: 100%; /* Ensures all images stay within the width of their container */
+    height: 300px; /* Sets the height of all images */
+    display: block; /* By specifying block display we can ensure our images are able to be centered */
+    margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
+    margin-right: auto;
 }
 
 
@@ -229,51 +242,194 @@ case the elements with class "Row") */
 /* end table styling*/
 
 
-/* form */
-
-input[type=text] {
-    color: #353535;
-    width: 100%; /*covers full w of container*/
-    padding: 12px; /*padding within text box*/
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; 
-    /* This creates a box with a 
-    border around the contact form input boxes */
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical; /* This allows the user to resize the text boxes vertically */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 550px; 
+    height: 400px;
+    padding: 30px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+  
+#slideshow > div { 
+    position: absolute; 
+    top: 40px; 
+    left: 70px; 
+    right: 50px; 
+    bottom: 10px; 
 }
 
-input[type=text]:hover {
-    box-shadow: 0 0 3px #353535 inset;
-}
+/*Contact form styling*/
 
-#message {
-    height: 100px;
-}
-
-input[type=submit] {
-    background-color: rgb(213, 213, 213);
-    color: #353535;
-    font-weight: bold;
-    padding: 12px 20px;
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: rgb(214, 80, 80);
+    color: white;
+    padding: 16px 20px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
-    display: block; /*submit button centered*/
-    margin-left: auto; /*in combo with m-right, centers submit button*/
-    margin-right: auto;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 180px;
 }
 
-input[type=submit]:hover {
-    background-color: #f4f4f4;
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
 }
 
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
 
-/* end of form*/
+/* Full-width input fields */
+.form-container input {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
 
+/* When the inputs get focus, do something */
+.form-container input:focus {
+    background-color: #ddd;
+    outline: none;
+}
 
+/* Set a style for the submit button */
+.form-container .btn {
+    background-color: rgb(214, 80, 80);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
 
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: rgb(163, 28, 28);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/*end of contact form styling*/
+
+a {
+    cursor: pointer;
+}
+
+/*Media Query Section*/
+
+/*Media rules for paragraph font size for different screen sizes*/
+@media screen and (max-width: 527px) {
+    p {
+        font-size: 3.75vw;
+    }
+}
+
+@media screen and (min-width: 528px) and (max-width: 660px) {
+    p {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 799px) {
+    p {
+        font-size: 2.75vw;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 924px) {
+    p {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 925px) and (max-width: 1050px) {
+    p {
+        font-size: 2.25vw;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1310px) {
+    p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 1311px) and (max-width: 1535px) {
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 1536px) and (max-width: 2269px) {
+    p {
+        font-size: 1.25vw;
+    }
+}
+
+@media screen and (min-width: 2270px) {
+    p {
+        font-size: 1vw;
+    }
+}
+
+/*Media rule for navbar links for different screen sizes*/
+/*Screens 1080px and smaller will display navbar links equally distributed */
+
+@media screen and (max-width: 1080px) {
+    .Navbar a{
+        width: 20%; /*This sets each navbar link to 1/5 of the navbar */
+        font-size: 2.5vw;
+    }
+}
+
+/*Media rules to enlarge the font of the white text for smaller screens*/
+@media screen and (max-width: 1080px) {
+    .white-text {
+        font-size: 4.5vw;
+    }
+}
+
+/*Media rules to increaase the size of the columns for larger screens */
+@media screen and (min-width: 1725px) {
+    .Column_1 {
+        height: 550px;
+    }
+
+    .Column_2 {
+        height: 550px;
+    }
+}
+
+/*Media rule to remove margin-top from h1 elements for extra
+large screens (so that the paragraph text fits in the column*/
+
+@media screen and (min-width: 2000px) {
+    h1 {
+        margin-top: 0;
+    }
+}
+
+/*End of Media Query Section */
