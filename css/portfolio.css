@@ -254,7 +254,7 @@ case the elements with class "Row") */
   
 #slideshow > div { 
     position: absolute; 
-    top: 40px; 
+    top: 60px; 
     left: 70px; 
     right: 50px; 
     bottom: 10px; 
