@@ -245,13 +245,15 @@ case the elements with class "Row") */
 #slideshow { 
     margin: 50px auto; 
     position: relative; 
-    width: 550px; 
+    width: 800px; 
     height: 400px;
     padding: 30px; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    background-color: rgba(255, 255, 255, 0.2);
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.2);*/
 }
   
+
+
 #slideshow > div { 
     position: absolute; 
     top: 60px; 
@@ -259,6 +261,7 @@ case the elements with class "Row") */
     right: 50px; 
     bottom: 10px; 
 }
+
 
 /*Contact form styling*/
 
