@@ -33,3 +33,22 @@ document.addEventListener("click", function(event) {
         closeForm()
     }
 }, false )
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('.hover-image');
+
+  images.forEach(image => {
+    const staticSrc = image.src;
+    const gifSrc = image.getAttribute('data-gif');
+
+    image.addEventListener('mouseover', () => {
+      image.src = gifSrc; // Path to the GIF
+    });
+
+    image.addEventListener('mouseout', () => {
+      image.src = staticSrc; // Path to the static image
+    });
+  });
+});

@@ -4,95 +4,42 @@ html {
 
 body {
     margin: 0%; /*ensures content displays all the way to user's browser*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+* { /* all elements on the page */
+    box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
+} 
 
 h1 {
     text-transform: uppercase;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     margin-top: 2%; /*adds margin above*/
 }
 
 h1:hover {
-    filter: grayscale(7%);
     transform: scale(1.1); /* This makes the h1 increase slightly in size when hovered over */
     transition: transform 1s; /* This makes the transform effect last 1 second */
 }
 
-.white-text {
-    color: rgb(0, 0, 0);
-    font-weight: 900;
-}
-
-p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    font-size: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+img {
+    display: block; /* By specifying block display we can ensure our images are able to be centered */
+    margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
+    margin-right: auto;
 }
 
 p:hover {
+    transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
     transition: transform 1s; /* This makes the transform effect last 1 second */
-	transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
-}
-
-.center {
-    text-align: center;
-}
-
-.center:hover {
-    transition: transform 2s;
-    transform: scale(1.1);
 }
 
 a {
-    color: rgb(79, 79, 244);
+    color: rgb(65, 65, 199); /* Links will appear in this color */
+    text-decoration: none; /* Overwrites the default underline of links */
+    cursor: pointer;
 }
 
-.Row img {
-    filter: grayscale(40%); /* This rids our pictures of 40% of their color */
-    border-radius: 5px;
-    max-width: 100%; /* Ensures all images stay within the width of their container */
-    height: 300px; /* Sets the height of all images */
-    display: block; /* By specifying block display we can ensure our images are able to be centered */
-    margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
-    margin-right: auto;
-}
-
-.Row img:hover {
-	filter: grayscale(3%);  /* Brings back most of the image's color when hovered over */
-    transition: transform 1s; /* Transition lasts 1 second */
-	transform: scale(1.1); /* Image is increased slightly when hovered over */
-}
-
-img {
-    border-radius: 5px;
-    max-width: 100%; /* Ensures all images stay within the width of their container */
-    height: 300px; /* Sets the height of all images */
-    display: block; /* By specifying block display we can ensure our images are able to be centered */
-    margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
-    margin-right: auto;
-}
-
-
-/* The @media rule is used in media queries to apply different styles for different media/types of devices */
-/* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
-@media screen and (max-width: 576px) {
-    img {
-        height: 100px;
-        margin-top: 150px;
-    }
-}
-
-/* Styling for footer element */
-footer {
-    padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: white;
-    color: rgb(64, 63, 63);
-}
-
-/*NAVBAR STYLING*/
+/*Navbar styling*/
 
 .Navbar {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
@@ -118,7 +65,6 @@ footer {
     color: rgb(64, 63, 63);
     padding: 14px 16px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
@@ -132,102 +78,191 @@ footer {
     to {top: 0vw;} /* This lowers the navbar text onto the navbar */
 }
 
-@media screen and (max-width: 576px) {
-    .Navbar a{
-        width: 25%; /*This makes each link take up 1/4 of the navbar*/
-        font-size: 12px;
-    }
-}
 
 .Navbar a:hover {
-    background-color: #f4f4f4;
-    color: rgb(81, 76, 76);
+    background-color: rgb(255,196,112); /*when hovering over the navbar, the background color will change to yellow */
+    color: rgb(81, 76, 76); /*when hovering over the navbar, the text color will change to grey */
     font-weight: bold;
 }
 
 
-.Navbar a.active {
-    background-color: darkgray;
+.Navbar a.active { /*The currently active part of the navbar will remain this color*/
+    background-color: rgb(255,196,112);
 }
 
-/*END NAVBAR STYLING*/
+/*End of Navbar styling*/
 
-/*video*/
+/*Home section background image and text styling*/
 
-#Typing_Video {
-    position: fixed; /*fixes video to page*/
-    right: 0%; /*no space btw edge of video and edge of page*/
-    bottom: 0%; /*same for bottom*/
-    min-width: 100%; /*video displayed across full width of page*/
-    z-index: -1; /* This places the video behind the other elements on the page */
+#homeimage {
+    position: fixed; /*fixes image to page*/
+    left: 0%; /*no space btw edge of image and edge of page*/
+    right: 0%; 
+    bottom: 0%;
+    z-index: -1; /* This places the image behind the other elements on the page */
+    height: 105%;
+    display: block;
+    width: 100vw; /* Sets the width to 100% of the viewport width */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+    object-fit: cover; /* Ensures the image covers the entire container */
+    object-position: center center; /* Centers the image */
+}
+
+/*Apply a gradient color over the image */
+.Home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(206, 131, 2, 0.5), rgba(0, 0, 0, 0));
+}
+
+.Opening_Text {
+    padding: 20px; /* This adds padding around the background image text container so that the background goes slightly the text */
+    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
+    -webkit-animation: moveImageText 5.75s;
+    animation: moveImageText 5.75s;
+    margin-top: 120px;
+}
+
+/* This animation effect causes the background image text to move up from the bottom of the page upon page load */
+@keyframes moveImageText {
+    from {top: -40vw;} /* This sets the position of the background image text to above the viewport */
+    to {top: 0vw} /* This moves the background image text to the normal positioning on the viewport */
+}
+
+#hello-text {
+    color: #FFC470;
+    margin-top: 8%;
+    font-size: 90px;
+}
+
+#introduction-text {
+    text-align: center;
+    color: #FFC470;
+}
+
+/*On hover the text above the background image will be slightly bigger */
+#introduction-text:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+/*End of Home section background image styling*/
+
+
+/* Projects section styling */
+
+#Projects {
+    width: 100%; /* This ensures the column takes up half of the page width */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
+    background-color: #fefefe; /* Sets the background color of the columns with class Column_1 */
+    margin-top: 30%;
+}
+
+#Projects h1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+.Column_projects_1, .Column_projects_2 {
+    width: 50%; /* This ensures the column takes up half of the page width */
+    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
+    height: auto; /* This sets the height of the column to auto */
+}
+
+.Column_projects_1 {
+    float: right;
+}
+
+.Column_projects_2 {
+    float: left;
+}
+
+.Column_projects_1 img{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 10px;
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-@media screen and (max-width: 576px) {
-    #Typing_Video {
-        display: none;
-    }
+.Column_projects_1 h3{
+    padding-left: 40px;
 }
 
-.Video_Text {
-    background: rgba (0, 0, 0, 0.5); /*semi-transparent background for the text to sit over*/
-    color: rgb(0, 0, 0);
-    width: 100%; /* Ensures the video-text container fills the width of the video */
-    padding: 20px; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
-    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveVideoText 5.75s;
-    animation: moveVideoText 5.75s;
-}
-/* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
-@keyframes moveVideoText {
-    from {top; -100vw;} /* This sets the position of the video text to above the viewport */
-    to {top: 0vw} /* This moves the video text to the normal positioning on the viewport */
+.Column_projects_2 h3{
+    padding-left: 40px;
 }
 
-/*end video styling*/
+.Column_projects_2 img{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
-/*table styling*/
+/* End of Projects section styling */
 
-* { /* The asterisk is a universal selector that applies this effect to all elements on the page */
-    box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
-} 
+/* About section styling */
 
-.Column_1 {
-    float: left;
-    width: 50%; /* This ensures the column takes up half of the page width */
+#About {
+    width: 100%; /* This ensures the column takes up half of the page width */
     padding: 100px;
-    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
-    height: 360px; /* This sets the height of the column to 400px */
     background-color: #fefefe; /* Sets the background color of the columns with class Column_1 */
 }
 
-/* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
-@media screen and (max-width: 576px) {
-    .Column_1 {
-        overflow: auto;
-    }
+#About h1{
+    padding-bottom: 30px;
 }
 
-.Column_2 {
+#About img:hover {
+    transition: transform 1s; /* Transition lasts 1 second */
+	transform: scale(1.1); /* Image is increased slightly when hovered over */
+    filter: grayscale(7%);
+}
+
+.Column_about_1, .Column_about_2 {
+    width: 50%; /* This ensures the column takes up half of the page width */
+    height: auto; /* This sets the height of the column to auto */
+    background-color: white;
+}
+
+.Column_about_1 {
+    float: right;
+}
+
+.Column_about_2 {
     float: left;
-    width: 50%;
-    padding: 10px;
-    padding-top: 1.9%;
-    height: 360px;
-    background-color: #f6f6f6;
 }
 
-/* This class is applied to the columns in the final row, overriding the height and padding 
-to provide more room for the contact form while keeping the rest of the formatting 
-from Column_1 or Column_2 */
-.Column_tall {
-    padding-top: 3.5%;
-    height: 450px;
+.Column_about_1 img{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    border-radius: 300px;
+    max-width: 65%; /* Ensures all images stay within the width of their container */
+    height: auto; /* Sets the height of all images */
+    filter: grayscale(20%);
 }
 
-/* This inserts something after the content of selected elements (in this 
-case the elements with class "Row") */
+.Column_about_2 p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* This inserts something after the elements with class "Row" */
 .Row:after {
 	content: ""; 
     /* By leaving this blank, we are allowing the footer (covered lower down) 
@@ -239,44 +274,54 @@ case the elements with class "Row") */
     /* This clears any other elements from floating on the left or the 
     right of an element */
 }
-/* end table styling*/
 
+/* End of About section styling */
 
-#slideshow { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 800px; 
-    height: 400px;
-    padding: 30px; 
-    /*box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    background-color: rgba(255, 255, 255, 0.2);*/
-}
-  
+/* Social media icons styling */
 
-
-#slideshow > div { 
-    position: absolute; 
-    top: 60px; 
-    left: 70px; 
-    right: 50px; 
-    bottom: 10px; 
+.social-media-icons {
+    margin-top: 40px;
 }
 
+.social-media-icons a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+
+#igicon {
+    margin: 0 10px;
+}
+
+.social-media-icons a:hover {
+    color: #0073b1; /* LinkedIn color */
+}
+
+.social-media-icons a:hover .fa-instagram {
+    color: #E4405F; /* Instagram color */
+}
+
+.social-media-icons a:hover .fa-github {
+    color: #5f5e5e; /* GitHub color */
+}
+
+/* End of social media icons styling */
 
 /*Contact form styling*/
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-    background-color: rgb(214, 80, 80);
-    color: white;
+    background-color: rgb(255,196,112);
+    color: rgb(81, 76, 76);
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    opacity: 0.8;
     position: fixed;
     bottom: 23px;
     right: 28px;
-    width: 180px;
+    width: 110px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
 }
 
 /* The popup form - hidden by default */
@@ -297,7 +342,7 @@ case the elements with class "Row") */
 }
 
 /* Full-width input fields */
-.form-container input {
+.form-container input, .form-container textarea {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -305,134 +350,198 @@ case the elements with class "Row") */
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* When the inputs get focus, do something */
-.form-container input:focus {
+/* When the inputs get focus, do this */
+.form-container input:focus, .form-container textarea:focus{
     background-color: #ddd;
     outline: none;
 }
 
 /* Set a style for the submit button */
 .form-container .btn {
-    background-color: rgb(214, 80, 80);
-    color: white;
+    background-color: rgb(255,196,112);
+    color: rgb(81, 76, 76);
     padding: 16px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
     margin-bottom:10px;
-    opacity: 0.8;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
 }
 
-/* Add a red background color to the cancel button */
+/* Add a darker yellow background color to the cancel button */
 .form-container .cancel {
-    background-color: rgb(163, 28, 28);
+    background-color: rgb(250, 161, 35);
 }
 
-/* Add some hover effects to buttons */
+/* Add hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
+    font-weight: bold;
+    background-color: #f9b454;
 }
 
-/*end of contact form styling*/
-
-a {
-    cursor: pointer;
+/* Add hover effects to cancel button */
+.form-container .cancel:hover {
+    font-weight: bold;
+    background-color: #f9970e;
 }
 
-/*Media Query Section*/
+/*End of Contact form styling*/
 
-/*Media rules for paragraph font size for different screen sizes*/
-@media screen and (max-width: 527px) {
-    p {
-        font-size: 3.75vw;
-    }
+/* Footer styling */
+footer {
+    padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
+    background-color: white;
+    color: rgb(64, 63, 63);
 }
-
-@media screen and (min-width: 528px) and (max-width: 660px) {
-    p {
-        font-size: 3.5vw;
-    }
+footer p{
+    font-size: 15px;
 }
+/* End of styling for footer element */
 
-@media screen and (min-width: 661px) and (max-width: 799px) {
-    p {
-        font-size: 2.75vw;
-    }
-}
+/* Modifications for different screen sizes: */
 
-@media screen and (min-width: 800px) and (max-width: 924px) {
-    p {
-        font-size: 2.5vw;
-    }
-}
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 1024px) {
 
-@media screen and (min-width: 925px) and (max-width: 1050px) {
-    p {
-        font-size: 2.25vw;
-    }
-}
-
-@media screen and (min-width: 1051px) and (max-width: 1310px) {
-    p {
-        font-size: 2vw;
-    }
-}
-
-@media screen and (min-width: 1311px) and (max-width: 1535px) {
-    p {
-        font-size: 1.5vw;
-    }
-}
-
-@media screen and (min-width: 1536px) and (max-width: 2269px) {
-    p {
-        font-size: 1.25vw;
-    }
-}
-
-@media screen and (min-width: 2270px) {
-    p {
-        font-size: 1vw;
-    }
-}
-
-/*Media rule for navbar links for different screen sizes*/
-/*Screens 1080px and smaller will display navbar links equally distributed */
-
-@media screen and (max-width: 1080px) {
-    .Navbar a{
-        width: 20%; /*This sets each navbar link to 1/5 of the navbar */
-        font-size: 2.5vw;
-    }
-}
-
-/*Media rules to enlarge the font of the white text for smaller screens*/
-@media screen and (max-width: 1080px) {
-    .white-text {
-        font-size: 4.5vw;
-    }
-}
-
-/*Media rules to increaase the size of the columns for larger screens */
-@media screen and (min-width: 1725px) {
-    .Column_1 {
-        height: 550px;
-    }
-
-    .Column_2 {
-        height: 550px;
-    }
-}
-
-/*Media rule to remove margin-top from h1 elements for extra
-large screens (so that the paragraph text fits in the column*/
-
-@media screen and (min-width: 2000px) {
     h1 {
-        margin-top: 0;
+        font-size: 25px;
     }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .Navbar a {
+        font-size: 16px;
+    }
+
+    #hello-text {
+        font-size: 60px;
+        margin-top: 6%;
+    }
+
+    .Column_projects_1, .Column_projects_2 {
+        width: 100%;
+        float: none;
+    }
+
+    .Column_about_1, .Column_about_2 {
+        width: 100%;
+        float: none;
+    }
+
 }
 
-/*End of Media Query Section */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .Navbar a {
+        font-size: 10px;
+        padding: 10px 12px;
+    }
+
+    #hello-text {
+        font-size: 48px;
+        margin-top: 4%;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .Column_projects_1, .Column_projects_2 {
+        width: 100%;
+        float: none;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .Column_about_1, .Column_about_2 {
+        width: 100%;
+        float: none;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+
+    .Column_about_1 img {
+        max-width: 80%;
+        }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    .Navbar a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .Row p {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    #hello-text {
+        font-size: 45px;
+        margin-top: 4%;
+    }
+
+    #introduction-text {
+        font-size: 18px;
+    }
+
+    .Column_projects_1, .Column_projects_2 {
+        width: 100%;
+        float: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .Column_about_1, .Column_about_2 {
+        width: 100%;
+        float: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .Column_about_1 img {
+    max-width: 90%;
+    }
+
+    .open-button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+}
