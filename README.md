@@ -7,6 +7,27 @@ This repository contains the source code for my personal portfolio website, desi
 * About Me: An overview of my background, interests, and professional journey.
 * Contact Form: Allows visitors to get in touch with me directly through the website.
 
+## Usage 
+To run the projects in this repository, follow these steps:
+
+1. **Navigate to the project directory:**
+    ```bash
+    cd your-html-css-js-project
+    ```
+
+2. **Open the `index.html` file in your web browser:**
+    - You can do this by double-clicking the `index.html` file.
+    - Alternatively, you can open a terminal or command prompt, navigate to the project directory, and use a command to open the file. For example, on macOS and Linux:
+      ```bash
+      open index.html
+      ```
+      On Windows:
+      ```bash
+      start index.html
+      ```
+
+This will launch the project in your default web browser, allowing you to view and interact with the application.
+
 ## Technologies Used
 * HTML5, CSS3, JavaScript
 * Hosting: GoDaddy CPanel
@@ -16,4 +37,11 @@ This repository contains the source code for my personal portfolio website, desi
 zsuzsannamangu.work
 
 ## Author
-Zsuzsanna Mangu, zsuzsannamangu@gmail.com
+
+_Feel free to contact me at zsuzsannamangu[at]gmail.com with any questions._
+
+### License
+
+*MIT*
+
+Copyright (c) 2024 **_Zsuzsanna Mangu_**
