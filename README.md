@@ -1,8 +1,16 @@
 # Portfolio
-This is my coding portfolio project.
+This repository contains the source code for my personal portfolio website, designed to showcase my skills, projects, and professional experience as a software developer. The website highlights my journey in tech and creative pursuits.
 
-## Technologies used
-HTML5, CSS3, JavaScript
+## Features
+* Responsive Design: Ensures the website looks great on all devices, from desktops to smartphones.
+* Project Showcase: A dedicated section to display my tech projects with detailed descriptions, technologies used, and links to the project repositories.
+* About Me: An overview of my background, interests, and professional journey, including my experience in software development, video production, and yoga teaching.
+* Contact Form: Allows visitors to get in touch with me directly through the website.
+
+## Technologies Used
+* HTML5, CSS3, JavaScript
+* Hosting: GoDaddy CPanel
+* FTP application: FileZilla
 
 ## Author
 Zsuzsanna Mangu, zsuzsannamangu@gmail.com
