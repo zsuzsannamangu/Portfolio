@@ -12,5 +12,8 @@ This repository contains the source code for my personal portfolio website, desi
 * Hosting: GoDaddy CPanel
 * FTP application: FileZilla
 
+## Live Site
+zsuzsannamangu.work
+
 ## Author
 Zsuzsanna Mangu, zsuzsannamangu@gmail.com
