@@ -32,30 +32,52 @@
         <!--Opening text-->
         <div class="Opening_Text">
             <h1 id="hello-text">Hello</h1>
-            <h2 id="introduction-text">I'm Zsuzsanna. Software Developer.</h2>
+            <h2 id="introduction-text">I'm Zsuzsanna. Software Developer and Product Manager.</h2>
         </div>
         <!--End of Background image-->
 
         <!--Projects section-->
         <div class="Row" id="Projects">
             <h1>Projects</h1>
-            <!--Right column-->
-            <div class="Column_projects_1">
-                <h3>AI-based chatbot (Python, spaCy, Flask)</h3>
-                <a href="https://github.com/zsuzsannamangu/AI-Final-Projects" target="_blank"><img src="./Images/AI_Chatbot.png" alt="AI-based Chatbot Project"></a>
-                <h3>Rental History with CRUD functionality (C#, .NET, MVC)</h3>
-                <a href="https://github.com/zsuzsannamangu/CSharp_DotNet-Final-Project" target="_blank"><img src="./Images/Rental_History_page_2.jpg" class="hover-image" data-gif="./Images/Rental_History_page_1.gif" alt="C# and .NET Project"></a>
-                <h3>Sentiment Analysis (Python, Pandas, Natural Language Toolkit, Flask)</h3>
-                <a href="https://github.com/zsuzsannamangu/Python-Projects/tree/master/Python-Projects/Sentiment_Analysis" target="_blank"><img src="./Images/Sentiment_Analysis.jpg" alt="Sentiment Analysis Project"></a>
+            
+            <!--Project 1-->
+            <div class="project-item">
+                <h3>Yoga and Chocolate</h3>
+                <p class="tech-stack">MERN Stack (MongoDB, Express.js, React, Node.js), HTML, CSS, JavaScript, SCSS, NPM, Git, Passport.js, SendGrid, PayPal, JWT, Figma, Adobe Premiere Pro</p>
+                <a href="https://yogaandchocolate.com" target="_blank">
+                    <img src="./Images/Projects/yogaandchocolate_website.png" alt="Yoga and Chocolate Project">
+                </a>
+                <p class="project-description">A fully deployed, production-ready full-stack web application built from concept to launch. Designed and developed a clean, intuitive user interface using React with SCSS Modules for component-scoped styling, optimized for mobile and desktop viewing. Implemented complete CRUD functionality for bookings and calendar events. Built authentication system with OAuth 2.0 Google login via Passport.js, JWT-based session management, and email authentication through SendGrid. Integrated secure payment processing with PayPal SDK and added Google reCAPTCHA v3 for spam protection. Implemented role-based access control (admin and user roles) with protected routes. Designed clear user flows and navigation that guide users seamlessly from browsing classes to completing bookings and event signups. The application demonstrates end-to-end project ownership—from initial design concepts through full-stack development, third-party API integrations, and distributed cloud deployment (Vercel frontend, Render backend, AWS EC2 MongoDB).</p>
+                <div class="project-links">
+                    <a href="https://yogaandchocolate.com" target="_blank" class="project-link">Live Site →</a>
+                    <a href="https://github.com/zsuzsannamangu/mern-yoga-hub" target="_blank" class="project-link">GitHub →</a>
+                </div>
             </div>
-            <!--Left column-->
-            <div class="Column_projects_2">
-                <h3>Rule-based chatbot (Python, Flask)</h3>
-                <a href="https://github.com/zsuzsannamangu/AI-Final-Projects" target="_blank"><img src="./Images/Rule_Based_Chatbot_1.png" class="hover-image" data-gif="./Images/Rule_Based_Chatbot.gif" alt="Rule-based Chatbot Project"></a>
-                <h3>Banking project (Python, Django)</h3>
-                <a href="https://github.com/zsuzsannamangu/Python-Projects/tree/master/Python-Projects/Checkbook_Project" target="_blank"><img src="./Images/Banking.jpg" class="hover-image" data-gif="./Images/Checkbook_Project.gif" alt="Banking Project"></a>
-                <h3>Herbs with CRUD functionality (Python, Django)</h3>
-                <a href="https://github.com/zsuzsannamangu/Django-Final-Project" target="_blank"><img src="./Images/Herbs_3.jpg" class="hover-image" data-gif="./Images/Herbs_5.gif" alt="Django Project"></a>
+
+            <!--Project 2-->
+            <div class="project-item">
+                <h3>Omvira Wellness Platform</h3>
+                <p class="tech-stack">Next.js, TypeScript, HTML, SCSS, JavaScript, TailwindCSS, Node.js/Express, PostgreSQL/Supabase, NextAuth.js, NPM, Git, Figma</p>
+                <a href="https://github.com/zsuzsannamangu/omvirawellness" target="_blank">
+                    <img src="./Images/Projects/omvirawellness.png" alt="Omvira Wellness Project">
+                </a>
+                <p class="project-description">A full-stack wellness marketplace platform connecting clients with independent wellness providers. Built with Next.js and TypeScript on the frontend, styled with TailwindCSS for responsive, component-based design. Designed distinct user interfaces for client and provider experiences while maintaining a unified account system that allows users to seamlessly switch between roles. Implemented NextAuth.js for authentication with email/password. Developed complex booking workflows for availability management, real-time booking updates, and slot blocking. Built Node.js/Express backend with PostgreSQL/Supabase for data management. Created dynamic user routes and dashboards with clear information architecture supporting provider discovery, booking management, service management, and client relationship tracking.</p>
+                <div class="project-links">
+                    <a href="https://github.com/zsuzsannamangu/omvirawellness" target="_blank" class="project-link">GitHub →</a>
+                </div>
+            </div>
+
+            <!--Project 3-->
+            <div class="project-item">
+                <h3>Yoga Sequencing App</h3>
+                <p class="tech-stack">React (TypeScript), Next.js, HTML, CSS, JavaScript, Python, FastAPI, PostgreSQL/Supabase, MoveNet/TensorFlow, OpenCV, PyTorch/DeepLabV3, Tailwind CSS, NPM, Git</p>
+                <a href="https://github.com/zsuzsannamangu/yogasequencing-app" target="_blank">
+                    <img src="./Images/Projects/sequencing_website.png" alt="Yoga Sequencing App Project">
+                </a>
+                <p class="project-description">An AI-powered full-stack web application that transforms video-recorded yoga sequences into professional printable guides. Designed and built a clean, intuitive interface using React with TypeScript and Next.js, styled with Tailwind CSS for a responsive, mobile-first grid layout. Developed the complete front-end workflow for video uploads, real-time processing feedback, and visual preview of generated sequences. Built a Python/FastAPI backend that implements sophisticated AI processing: motion detection algorithms using OpenCV to identify held poses, MoveNet/TensorFlow for pose estimation, and DeepLabV3/PyTorch for semantic segmentation and background removal. The system converts detected poses into clean SVG vector images using potrace and enables PDF export for printing. Designed clear user flows that make complex AI processing accessible—users simply upload a video and receive a printable sequence guide. The application demonstrates strong problem-solving through design, taking a technical multi-step AI pipeline and presenting it through an intuitive, user-friendly interface.</p>
+                <div class="project-links">
+                    <a href="https://github.com/zsuzsannamangu/yogasequencing-app" target="_blank" class="project-link">GitHub →</a>
+                </div>
             </div>
         </div>
         <!--End of Projects section-->
@@ -65,41 +87,45 @@
             <h1>About Me</h1>
             <!--Left column-->
             <div class="Column_about_2">
-                <p>Hi, I'm Zsuzsanna, a junior full stack developer with a robust educational foundation and hands-on experience in a variety of 
-                cutting-edge technologies. I am a graduate of <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>’s 
-                Software Developer Boot Camp and have further specialized in Artificial Intelligence & Machine Learning through their additional course.</p>        
-                <h2>My Technical Skills</h2>
+                <p>I do full stack development, front-end design, and product development. I enjoy creating clean, simple, easy-to-use web experiences. I've built real projects from idea to working prototypes, including my MERN app (fully live), and ongoing projects like Omvira and Sequence Print.</p>
+                
+                <h2>What I do</h2>
                 <ul>
-                    <li><strong>Front-End Technologies:</strong> JavaScript, HTML, CSS, Bootstrap</li>
-                    <li><strong>Back-End Technologies:</strong> Python, Django, C#, .NET Framework, ASP.NET MVC</li>
-                    <li><strong>Databases:</strong> SQL</li>
-                    <li><strong>Artificial Intelligence & Machine Learning:</strong> R, spaCy</li>
+                    <li>Build fast, responsive pages</li>
+                    <li>Design clear layouts and user flows</li>
+                    <li>Plan and develop features from start to finish</li>
+                    <li>Work with HTML, CSS, JavaScript, React, Next.js</li>
+                    <li>Use Figma for design and structure</li>
+                    <li>Improve navigation and usability</li>
+                    <li>Keep design and code organized</li>
                 </ul>
-                <h2>My Strengths</h2>
-                <p>With a comprehensive background in full stack development, I excel at building complete, scalable, and efficient web applications. I am proficient in 
-                    developing dynamic user interfaces that ensure a seamless user experience, and in managing robust back-end systems. 
-                    My training in AI and machine learning enables me to incorporate intelligent features into applications, enhancing functionality and user engagement.</p>
-                <h2>Why Work With Me?</h2>
+                
+                <h2>How I work</h2>
                 <ul>
-                    <li><strong>Reliability:</strong> I am dedicated to delivering high-quality work on time.</li>
-                    <li><strong>Time Management:</strong> Proven ability to manage multiple projects and meet deadlines.</li>
-                    <li><strong>Continuous Learning:</strong> I am always eager to learn new technologies and improve my skills.</li>
+                    <li>Quick learner</li>
+                    <li>Detail focused</li>
+                    <li>Problem solver</li>
+                    <li>Easy to work with</li>
+                    <li>Clear communicator</li>
+                    <li>User-first mindset</li>
                 </ul>
-                <h2>Other Interests</h2>
-                <p>I am a dedicated volunteer yoga teacher at Bybee Lakes Hope Center. As a yoga teacher, I am committed to helping students deepen their 
-                    relationship with their body. I also express my creativity as a <a href="https://www.retreatpdx.com/" target="_blank">chocolatier</a>, 
-                    focusing on ethical sourcing and sustainability, and as a <a href="https://www.vimeo.com/zsuzsannamangu" target="_blank">video producer</a>, telling stories through film.
-                    In my free time, I love caring for my plants and playing with my two small children.</p>
+                
+                <h2>Outside of tech</h2>
+                <p>Yoga teacher, yoga therapist, chocolate maker, parent, and plant lover. Creativity, care, and simplicity guide everything I do.</p>
+                
                 <div class="social-media-icons">
                     <a href="https://www.linkedin.com/in/zsuzsannamangu/" target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://www.instagram.com/retreat_pdx/" target="_blank" id="igicon">
+                    <a href="https://www.instagram.com/zsuzsannacreates" target="_blank" class="icons">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <a href="https://github.com/zsuzsannamangu" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
+                    <!-- <a href="https://docs.google.com/document/d/1cfVSwqEwJYSiZR6x1KGoWHS5GjDYhnzUCJmnfJoOKOA/edit" target="_blank" class="icons">
+                        <i class="fas fa-file-pdf"></i> Resume
+                    </a> -->
                 </div> 
             </div>
             <!--Right column-->

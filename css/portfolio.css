@@ -156,60 +156,103 @@ a {
 /* Projects section styling */
 
 #Projects {
-    width: 100%; /* This ensures the column takes up half of the page width */
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
-    background-color: #fefefe; /* Sets the background color of the columns with class Column_1 */
+    width: 100%;
+    padding: 100px;
+    padding-top: 3%;
+    background-color: #fefefe;
     margin-top: 30%;
 }
 
-#Projects h1{
+#Projects h1 {
     padding-top: 50px;
-    padding-bottom: 30px;
-
+    padding-bottom: 50px;
+    font-size: 48px;
 }
 
+.project-item {
+    width: 100%;
+    margin-bottom: 80px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 0;
+    color: #333;
+    text-transform: none;
+}
+
+.project-item h3:hover {
+    transform: none;
+}
+
+.tech-stack {
+    font-size: 18px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+.project-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 0;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-item img:hover {
+    transform: scale(1.02);
+}
+
+.project-description {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #444;
+    margin: 30px 0;
+    text-align: left;
+    padding: 0;
+}
+
+.project-links {
+    margin-top: 25px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    font-size: 18px;
+    color: rgb(65, 65, 199);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 0;
+}
+
+.project-link:hover {
+    color: rgb(255,196,112);
+    text-decoration: underline;
+}
+
+/* Hide old column styles */
 .Column_projects_1, .Column_projects_2 {
-    width: 50%; /* This ensures the column takes up half of the page width */
-    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
-    height: auto; /* This sets the height of the column to auto */
-}
-
-.Column_projects_1 {
-    float: right;
-}
-
-.Column_projects_2 {
-    float: left;
-}
-
-.Column_projects_1 img{
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-top: 10px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.Column_projects_1 h3{
-    padding-left: 40px;
-}
-
-.Column_projects_2 h3{
-    padding-left: 40px;
-}
-
-.Column_projects_2 img{
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-top: 10px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    display: none;
 }
 
 /* End of Projects section styling */
@@ -223,7 +266,9 @@ a {
 }
 
 #About h1{
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 48px;
 }
 
 #About img:hover {
@@ -260,6 +305,21 @@ a {
 .Column_about_2 p{
     text-align: justify;
     font-size: 20px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.Column_about_2 h2{
+    font-size: 28px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.Column_about_2 li{
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
 }
 
 /* This inserts something after the elements with class "Row" */
@@ -289,8 +349,8 @@ a {
     font-size: 24px;
 }
 
-#igicon {
-    margin: 0 10px;
+.icons {
+    margin: 0 15px;
 }
 
 .social-media-icons a:hover {
@@ -303,6 +363,10 @@ a {
 
 .social-media-icons a:hover .fa-github {
     color: #5f5e5e; /* GitHub color */
+}
+
+.social-media-icons a:hover .fa-file-pdf {
+    color: #8792d8; /* File color */
 }
 
 /* End of social media icons styling */
@@ -424,9 +488,25 @@ footer p{
         margin-top: 6%;
     }
 
-    .Column_projects_1, .Column_projects_2 {
-        width: 100%;
-        float: none;
+    #Projects {
+        padding: 60px 5%;
+    }
+
+    #Projects h1 {
+        font-size: 36px;
+    }
+
+    .project-item {
+        padding: 30px;
+        margin-bottom: 60px;
+    }
+
+    .project-item h3 {
+        font-size: 28px;
+    }
+
+    .project-description {
+        font-size: 18px;
     }
 
     .Column_about_1, .Column_about_2 {
@@ -457,11 +537,34 @@ footer p{
         font-size: 26px;
     }
 
-    .Column_projects_1, .Column_projects_2 {
-        width: 100%;
-        float: none;
-        padding-left: 20px;
-        padding-right: 20px;
+    #Projects {
+        padding: 40px 20px;
+    }
+
+    #Projects h1 {
+        font-size: 32px;
+        padding-bottom: 30px;
+    }
+
+    .project-item {
+        padding: 25px;
+        margin-bottom: 50px;
+    }
+
+    .project-item h3 {
+        font-size: 24px;
+    }
+
+    .tech-stack {
+        font-size: 16px;
+    }
+
+    .project-description {
+        font-size: 16px;
+    }
+
+    .project-link {
+        font-size: 16px;
     }
 
     .Column_about_1, .Column_about_2 {
@@ -514,11 +617,29 @@ footer p{
         font-size: 18px;
     }
 
-    .Column_projects_1, .Column_projects_2 {
-        width: 100%;
-        float: none;
-        padding-left: 10px;
-        padding-right: 10px;
+    #Projects {
+        padding: 30px 15px;
+    }
+
+    #Projects h1 {
+        font-size: 28px;
+    }
+
+    .project-item {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .project-item h3 {
+        font-size: 22px;
+    }
+
+    .tech-stack {
+        font-size: 14px;
+    }
+
+    .project-description {
+        font-size: 15px;
     }
 
     .Column_about_1, .Column_about_2 {
