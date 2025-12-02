@@ -303,7 +303,7 @@ a {
 }
 
 .Column_about_2 p{
-    text-align: justify;
+    text-align: left;
     font-size: 20px;
     color: #444;
     line-height: 1.6;
@@ -363,6 +363,10 @@ a {
 
 .social-media-icons a:hover .fa-github {
     color: #5f5e5e; /* GitHub color */
+}
+
+.social-media-icons a:hover .fa-vimeo {
+    color: #1ab7ea; /* Vimeo color */
 }
 
 .social-media-icons a:hover .fa-file-pdf {
