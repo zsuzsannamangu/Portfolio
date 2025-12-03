@@ -56,25 +56,9 @@ a {
     to {left: 0vw;}
 }
 
-/* Hamburger icon - TEMPORARILY VISIBLE FOR TESTING */
+/* Hamburger icon - hidden on desktop */
 .Navbar .icon {
-    display: flex !important;
-    visibility: visible !important;
-    position: absolute !important;
-    right: 15px !important;
-    top: 10px !important;
-    padding: 10px !important;
-    cursor: pointer !important;
-    z-index: 1001 !important;
-    background-color: yellow !important;
-    flex-direction: column !important;
-    justify-content: space-around !important;
-    width: 30px !important;
-    height: 30px !important;
-    border: 2px solid red !important;
-    float: none !important;
-    margin: 0 !important;
-    opacity: 1 !important;
+    display: none;
 }
 
 .Navbar .icon span {
