@@ -47,15 +47,7 @@ a {
     top: 0;
     width: 100%;
     z-index: 1000;
-    -webkit-animation: moveNav 2s;
-    animation: moveNav 2s;
     background-color: rgb(252, 251, 251);
-}
-
-/* moveNav animation effect for moving the nav bar in from the left of the screen */
-@keyframes moveNav {
-    from {left: -100vw;}
-    to {left: 0vw;}
 }
 
 /* Navbar links */
@@ -68,14 +60,6 @@ a {
     font-size: 15px;
     text-align: center;
     position: relative;
-    -webkit-animation: moveNavText 1s;
-    animation: moveNavText 1s;
-}
-
-/* moveNavText animation effect for moving the navbar text from above the view to the navbar */
-@keyframes moveNavText {
-    from {top: -100vw;}
-    to {top: 0vw;}
 }
 
 .Navbar a:hover {
@@ -118,28 +102,16 @@ a {
 }
 
 .Opening_Text {
-    padding: 20px; /* This adds padding around the background image text container so that the background goes slightly the text */
-    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveImageText 5.75s;
-    animation: moveImageText 5.75s;
+    padding: 20px;
+    position: relative;
     margin-top: 120px;
-}
-
-/* This animation effect causes the background image text to move up from the bottom of the page upon page load */
-@keyframes moveImageText {
-    from {top: -40vw;} /* This sets the position of the background image text to above the viewport */
-    to {top: 0vw} /* This moves the background image text to the normal positioning on the viewport */
-}
-
-#hello-text {
-    color: #FFC470;
-    margin-top: 8%;
-    font-size: 90px;
 }
 
 #introduction-text {
     text-align: center;
     color: #FFC470;
+    font-size: 48px;
+    margin-top: 8%;
 }
 
 /*On hover the text above the background image will be slightly bigger */
@@ -485,10 +457,6 @@ footer p{
         font-size: 16px;
     }
 
-    #hello-text {
-        font-size: 60px;
-        margin-top: 6%;
-    }
 
     #Projects {
         padding: 60px 5%;
@@ -634,9 +602,9 @@ footer p{
         min-height: 100vh;
     }
 
-    #hello-text {
-        font-size: 48px;
-        margin-top: 4%;
+    #introduction-text {
+        font-size: 28px;
+        margin-top: 15%;
     }
 
     h2 {
@@ -762,13 +730,9 @@ footer p{
         min-height: 100vh;
     }
 
-    #hello-text {
-        font-size: 45px;
-        margin-top: 4%;
-    }
-
     #introduction-text {
-        font-size: 18px;
+        font-size: 24px;
+        margin-top: 15%;
     }
 
     #Projects {
