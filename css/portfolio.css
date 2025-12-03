@@ -47,6 +47,8 @@ a {
     top: 0;
     width: 100%;
     z-index: 1000;
+    -webkit-animation: moveNav 2s;
+    animation: moveNav 2s;
     background-color: rgb(252, 251, 251);
 }
 
@@ -56,27 +58,8 @@ a {
     to {left: 0vw;}
 }
 
-/* Hamburger icon - hidden on desktop */
-.Navbar .icon {
-    display: none;
-}
-
-.Navbar .icon span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: rgb(64, 63, 63);
-    border-radius: 3px;
-    margin: 3px 0;
-}
-
-/* Navbar links container */
-.nav-links {
-    display: flex;
-}
-
 /* Navbar links */
-.Navbar a:not(.icon) {
+.Navbar a {
     float: left;
     display: block;
     color: rgb(64, 63, 63);
@@ -85,6 +68,8 @@ a {
     font-size: 15px;
     text-align: center;
     position: relative;
+    -webkit-animation: moveNavText 1s;
+    animation: moveNavText 1s;
 }
 
 /* moveNavText animation effect for moving the navbar text from above the view to the navbar */
@@ -93,7 +78,7 @@ a {
     to {top: 0vw;}
 }
 
-.Navbar a:not(.icon):hover {
+.Navbar a:hover {
     background-color: rgb(255,196,112);
     color: rgb(81, 76, 76);
     font-weight: bold;
@@ -484,33 +469,6 @@ footer p{
 /* End of styling for footer element */
 
 /* Modifications for different screen sizes: */
-
-/* TEST: Make hamburger visible at larger breakpoint for debugging */
-@media (max-width: 1200px) {
-    .Navbar .icon {
-        display: flex !important;
-        visibility: visible !important;
-        position: absolute !important;
-        right: 15px !important;
-        top: 10px !important;
-        padding: 10px !important;
-        cursor: pointer !important;
-        z-index: 1001 !important;
-        background-color: rgb(252, 251, 251) !important;
-        flex-direction: column !important;
-        justify-content: space-around !important;
-        width: 30px !important;
-        height: 30px !important;
-        border: 2px solid rgb(64, 63, 63) !important;
-        float: none !important;
-        margin: 0 !important;
-        opacity: 1 !important;
-    }
-    
-    .Navbar .nav-links {
-        display: none;
-    }
-}
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 1024px) {

@@ -19,16 +19,6 @@ function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
 
-// Mobile navbar toggle function
-function toggleMenu() {
-    var x = document.getElementById("navLinks");
-    if (x.classList.contains("responsive")) {
-        x.classList.remove("responsive");
-    } else {
-        x.classList.add("responsive");
-    }
-}
-
 //This code will create close the contact from when 
 //the user clicks off of it
 //The first step is to add an event listener for any clicks on the website
