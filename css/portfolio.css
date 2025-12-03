@@ -94,49 +94,37 @@ a {
 
 /*Home section background image and text styling*/
 
-.Home {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
 #homeimage {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center center;
-    z-index: -1;
+    position: fixed; /*fixes image to page*/
+    left: 0%; /*no space btw edge of image and edge of page*/
+    right: 0%; 
+    bottom: 0%;
+    z-index: -1; /* This places the image behind the other elements on the page */
+    height: 105%;
+    display: block;
+    width: 100vw; /* Sets the width to 100% of the viewport width */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
+    object-fit: cover; /* Ensures the image covers the entire container */
+    object-position: center center; /* Centers the image */
 }
 
 /*Apply a gradient color over the image */
 .Home::before {
     content: '';
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(206, 131, 2, 0.5), rgba(0, 0, 0, 0));
-    z-index: -1;
-    pointer-events: none;
 }
 
 .Opening_Text {
-    position: relative;
-    padding: 20px;
-    z-index: 1;
+    padding: 20px; /* This adds padding around the background image text container so that the background goes slightly the text */
+    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveImageText 5.75s;
     animation: moveImageText 5.75s;
     margin-top: 120px;
-    min-height: calc(100vh - 120px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* This animation effect causes the background image text to move up from the bottom of the page upon page load */
@@ -172,8 +160,7 @@ a {
     padding: 100px;
     padding-top: 3%;
     background-color: #fefefe;
-    position: relative;
-    z-index: 1;
+    margin-top: 30%;
 }
 
 #Projects h1 {
