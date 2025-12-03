@@ -18,10 +18,17 @@
 
         <!--Navbar-->
         <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#Projects">Projects</a>
-            <a href="#About">About</a>
-            <a onclick="openForm()" ondblclick="closeForm()" class="Contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a class="active" href="#Home">Home</a>
+                <a href="#Projects">Projects</a>
+                <a href="#About">About</a>
+                <a onclick="openForm()" ondblclick="closeForm()" class="Contact">Contact</a>
+            </div>
         </div>
         <!--End of Navbar-->
 
@@ -32,7 +39,8 @@
         <!--Opening text-->
         <div class="Opening_Text">
             <h1 id="hello-text">Hello</h1>
-            <h2 id="introduction-text">I'm Zsuzsanna. Software Developer and Product Manager.</h2>
+            <h2 id="introduction-text">I'm Zsuzsanna.</h2>
+            <h2 id="introduction-text">Software Developer and Product Manager.</h2>
         </div>
         <!--End of Background image-->
 

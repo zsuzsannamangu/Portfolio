@@ -42,51 +42,80 @@ a {
 /*Navbar styling*/
 
 .Navbar {
-    overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
-    position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
-    top: 0; /* This ensures no space is displayed above the navbar */
-    width: 100%; /* This makes the navbar span the entire width of the page */
-    z-index: 1; /* This ensures other elements don't display over the navbar */
-    -webkit-animation: moveNav 2s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
-    animation: moveNav 2s; /* This applies the moveNav animation for all other browsers */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: rgb(252, 251, 251);
 }
 
 /* moveNav animation effect for moving the nav bar in from the left of the screen */
 @keyframes moveNav {
-    from {left: -100vw;} /* The navbar is starting off screen to the left */
-    to {left: 0vw;} /* This moves the navbar into place on the screen */
+    from {left: -100vw;}
+    to {left: 0vw;}
 }
- 
+
+/* Hamburger icon - TEMPORARILY VISIBLE FOR TESTING */
+.Navbar .icon {
+    display: flex !important;
+    visibility: visible !important;
+    position: absolute !important;
+    right: 15px !important;
+    top: 10px !important;
+    padding: 10px !important;
+    cursor: pointer !important;
+    z-index: 1001 !important;
+    background-color: yellow !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    width: 30px !important;
+    height: 30px !important;
+    border: 2px solid red !important;
+    float: none !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+}
+
+.Navbar .icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(64, 63, 63);
+    border-radius: 3px;
+    margin: 3px 0;
+}
+
+/* Navbar links container */
+.nav-links {
+    display: flex;
+}
+
 /* Navbar links */
-.Navbar a {
-    float: left; /* This specifies that the text floats on the left on the navbar */
-    display: block; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
+.Navbar a:not(.icon) {
+    float: left;
+    display: block;
     color: rgb(64, 63, 63);
-    padding: 14px 16px; /* This adds padding around our text */
-    text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
-    font-size: 15px; /* This specifies the font size for text on our navbar */
-    text-align: center; /* This centers the text within its container */
-    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
-    -webkit-animation: moveNavText 1s; /* Animation for Safari 4.0 - 8.0 */
-    animation: moveNavText 1s; /* Applies the moveNavText animation for 5.75s */ 
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
 }
 
 /* moveNavText animation effect for moving the navbar text from above the view to the navbar */
 @keyframes moveNavText {
-    from {top: -100vw;} /* This sets the navbar text 100% above the viewport */
-    to {top: 0vw;} /* This lowers the navbar text onto the navbar */
+    from {top: -100vw;}
+    to {top: 0vw;}
 }
 
-
-.Navbar a:hover {
-    background-color: rgb(255,196,112); /*when hovering over the navbar, the background color will change to yellow */
-    color: rgb(81, 76, 76); /*when hovering over the navbar, the text color will change to grey */
+.Navbar a:not(.icon):hover {
+    background-color: rgb(255,196,112);
+    color: rgb(81, 76, 76);
     font-weight: bold;
 }
 
-
-.Navbar a.active { /*The currently active part of the navbar will remain this color*/
+.Navbar a.active {
     background-color: rgb(255,196,112);
 }
 
@@ -472,6 +501,33 @@ footer p{
 
 /* Modifications for different screen sizes: */
 
+/* TEST: Make hamburger visible at larger breakpoint for debugging */
+@media (max-width: 1200px) {
+    .Navbar .icon {
+        display: flex !important;
+        visibility: visible !important;
+        position: absolute !important;
+        right: 15px !important;
+        top: 10px !important;
+        padding: 10px !important;
+        cursor: pointer !important;
+        z-index: 1001 !important;
+        background-color: rgb(252, 251, 251) !important;
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        width: 30px !important;
+        height: 30px !important;
+        border: 2px solid rgb(64, 63, 63) !important;
+        float: none !important;
+        margin: 0 !important;
+        opacity: 1 !important;
+    }
+    
+    .Navbar .nav-links {
+        display: none;
+    }
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 1024px) {
 
@@ -550,9 +606,81 @@ footer p{
         font-size: 22px;
     }
 
-    .Navbar a {
-        font-size: 10px;
-        padding: 10px 12px;
+    /* Remove navbar animation on mobile */
+    .Navbar {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    /* Hide regular nav links on mobile */
+    .Navbar .nav-links {
+        display: none;
+    }
+
+    /* Mobile navbar hamburger menu */
+    .Navbar .icon {
+        display: flex !important;
+        visibility: visible !important;
+        position: absolute !important;
+        right: 15px !important;
+        top: 10px !important;
+        padding: 10px !important;
+        cursor: pointer !important;
+        z-index: 1001 !important;
+        background-color: rgb(252, 251, 251) !important;
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        width: 30px !important;
+        height: 30px !important;
+        border: 2px solid rgb(64, 63, 63) !important;
+        float: none !important;
+        margin: 0 !important;
+        opacity: 1 !important;
+    }
+
+    .Navbar .icon span {
+        width: 25px !important;
+        height: 3px !important;
+        background-color: rgb(64, 63, 63) !important;
+        border-radius: 3px !important;
+        display: block !important;
+        margin: 3px 0 !important;
+    }
+
+    .Navbar .icon:hover {
+        background-color: rgb(255,196,112);
+    }
+
+    .Navbar .icon:hover span {
+        background-color: rgb(81, 76, 76);
+    }
+
+    .Navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        background-color: rgb(252, 251, 251);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .Navbar .nav-links.responsive {
+        display: flex;
+    }
+
+    .Navbar .nav-links a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 14px 16px;
+        font-size: 15px;
+    }
+
+    .Navbar a:hover {
+        background-color: rgb(255,196,112);
+        color: rgb(81, 76, 76);
     }
 
     #homeimage {
@@ -673,9 +801,60 @@ footer p{
         font-size: 16px;
     }
 
-    .Navbar a {
-        font-size: 14px;
-        padding: 8px 10px;
+    /* Mobile navbar hamburger menu */
+    .Navbar .icon {
+        display: flex !important;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1001;
+        background-color: transparent;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 30px;
+    }
+
+    .Navbar .icon span {
+        width: 25px;
+        height: 3px;
+        background-color: rgb(64, 63, 63);
+        border-radius: 3px;
+        transition: all 0.3s ease;
+        display: block;
+    }
+
+    .Navbar .icon:hover span {
+        background-color: rgb(81, 76, 76);
+    }
+
+    .Navbar .icon:hover {
+        background-color: rgb(255,196,112);
+    }
+
+    .Navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        background-color: rgb(252, 251, 251);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .Navbar .nav-links.responsive {
+        display: flex;
+    }
+
+    .Navbar .nav-links a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 14px 16px;
+        font-size: 15px;
     }
 
     .Row p {
