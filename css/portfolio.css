@@ -743,60 +743,9 @@ footer p{
         font-size: 16px;
     }
 
-    /* Mobile navbar hamburger menu */
-    .Navbar .icon {
-        display: flex !important;
-        position: absolute;
-        right: 15px;
-        top: 10px;
-        padding: 10px;
-        cursor: pointer;
-        z-index: 1001;
-        background-color: transparent;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 30px;
-        height: 30px;
-    }
-
-    .Navbar .icon span {
-        width: 25px;
-        height: 3px;
-        background-color: rgb(64, 63, 63);
-        border-radius: 3px;
-        transition: all 0.3s ease;
-        display: block;
-    }
-
-    .Navbar .icon:hover span {
-        background-color: rgb(81, 76, 76);
-    }
-
-    .Navbar .icon:hover {
-        background-color: rgb(255,196,112);
-    }
-
-    .Navbar .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 48px;
-        left: 0;
-        background-color: rgb(252, 251, 251);
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
-
-    .Navbar .nav-links.responsive {
-        display: flex;
-    }
-
-    .Navbar .nav-links a {
-        float: none;
-        display: block;
-        text-align: left;
-        padding: 14px 16px;
-        font-size: 15px;
+    .Navbar a {
+        font-size: 14px;
+        padding: 8px 10px;
     }
 
     .Row p {
