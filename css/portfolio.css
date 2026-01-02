@@ -504,47 +504,27 @@ footer p {
 
 /* iPad devices (820px - 1024px) */
 @media (min-width: 820px) and (max-width: 1024px) {
-    /* iPad hero section - professional full-screen design */
     .Home {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        min-height: 700px;
-        overflow: hidden;
+        display: none;
     }
 
     #homeimage {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-        display: block;
-        filter: brightness(0.4) blur(2px);
+        display: none;
     }
 
     .Home::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
-        z-index: 1;
+        display: none;
     }
 
     .Opening_Text {
         -webkit-animation: none;
         animation: none;
-        position: relative;
-        z-index: 2;
         margin-top: 0;
         margin-bottom: 0;
-        padding: 50px 40px;
-        min-height: 100vh;
+        padding: 100px 60px;
+        padding-top: 70px;
+        background: #6c757d;
+        min-height: 75vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -553,23 +533,42 @@ footer p {
     }
 
     #hello-text {
-        font-size: 70px;
+        font-size: 64px;
         color: #ffffff;
         margin-top: 0;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         font-weight: 700;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        line-height: 1.2;
+        line-height: 1.1;
+        text-transform: uppercase;
+        letter-spacing: 3px;
     }
 
     #introduction-text {
-        font-size: 32px;
-        margin-top: 0;
+        font-size: 28px;
+        margin-top: 15px;
         color: #ffffff;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        line-height: 1.5;
-        max-width: 85%;
-        font-weight: 400;
+        line-height: 1.4;
+        max-width: 90%;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    .Navbar {
+        background-color: #6c757d;
+    }
+
+    .Navbar a {
+        color: #ffffff;
+    }
+
+    .Navbar a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+
+    .Navbar a.active {
+        background-color: rgba(255, 255, 255, 0.15);
     }
 }
 
@@ -666,49 +665,44 @@ footer p {
         animation: none;
         position: relative;
         top: 0;
+        background-color: #6c757d;
     }
 
-    /* Mobile hero section - professional full-screen design */
+    .Navbar a {
+        color: #ffffff;
+    }
+
+    .Navbar a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+
+    .Navbar a.active {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Mobile hero section - clean and professional */
     .Home {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        min-height: 600px;
-        overflow: hidden;
+        display: none;
     }
 
     #homeimage {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-        display: block;
-        filter: brightness(0.4) blur(2px);
+        display: none;
     }
 
     .Home::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
-        z-index: 1;
+        display: none;
     }
 
     .Opening_Text {
         -webkit-animation: none;
         animation: none;
-        position: relative;
-        z-index: 2;
         margin-top: 0;
         margin-bottom: 0;
-        padding: 40px 30px;
-        min-height: 100vh;
+        padding: 80px 30px;
+        padding-top: 60px;
+        background: #6c757d;
+        min-height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -788,23 +782,25 @@ footer p {
 
 
     #hello-text {
-        font-size: 48px;
+        font-size: 56px;
         color: #ffffff;
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-weight: 700;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        line-height: 1.2;
+        line-height: 1.1;
+        text-transform: uppercase;
+        letter-spacing: 2px;
     }
 
     #introduction-text {
-        font-size: 22px;
-        margin-top: 0;
+        font-size: 24px;
+        margin-top: 10px;
         color: #ffffff;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        line-height: 1.5;
-        max-width: 90%;
-        font-weight: 400;
+        line-height: 1.4;
+        max-width: 100%;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     h2 {
@@ -812,11 +808,9 @@ footer p {
     }
 
     #Projects {
-        padding: 60px 20px;
-        padding-top: 60px;
+        padding: 40px 20px;
+        padding-top: 40px;
         margin-top: 0;
-        position: relative;
-        z-index: 10;
     }
 
     .projects-separator {
@@ -935,32 +929,53 @@ footer p {
     }
 
     /* Mobile hero section for small phones */
-    .Home {
-        min-height: 500px;
-    }
-
     .Opening_Text {
-        padding: 30px 20px;
+        padding: 70px 20px;
+        padding-top: 50px;
+        background: #6c757d;
+        min-height: 65vh;
     }
 
     #hello-text {
-        font-size: 42px;
-        margin-bottom: 15px;
+        font-size: 48px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
     }
 
     #introduction-text {
         font-size: 20px;
-        margin-top: 0;
+        margin-top: 10px;
         color: #ffffff;
-        max-width: 95%;
+        max-width: 100%;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .Navbar {
+        background-color: #6c757d;
+    }
+
+    .Navbar a {
+        color: #ffffff;
+    }
+
+    .Navbar a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+
+    .Navbar a.active {
+        background-color: rgba(255, 255, 255, 0.15);
     }
 
     #Projects {
-        padding: 50px 15px;
-        padding-top: 50px;
+        padding: 30px 15px;
+        padding-top: 30px;
         margin-top: 0;
-        position: relative;
-        z-index: 10;
     }
 
     .projects-separator {
