@@ -521,54 +521,64 @@ footer p {
         animation: none;
         margin-top: 0;
         margin-bottom: 0;
-        padding: 100px 60px;
-        padding-top: 70px;
-        background: #6c757d;
-        min-height: 75vh;
+        padding: 80px 50px;
+        padding-top: 50px;
+        background: #ADFF2F;
+        min-height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        position: relative;
     }
 
     #hello-text {
-        font-size: 64px;
-        color: #ffffff;
+        font-size: 56px;
+        color: #000000;
         margin-top: 0;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         font-weight: 700;
-        line-height: 1.1;
-        text-transform: uppercase;
-        letter-spacing: 3px;
+        line-height: 1.2;
+        text-transform: none;
+        letter-spacing: -1px;
+        text-shadow: none;
+        position: relative;
+        text-align: left;
     }
 
     #introduction-text {
-        font-size: 28px;
-        margin-top: 15px;
-        color: #ffffff;
-        line-height: 1.4;
-        max-width: 90%;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
+        font-size: 20px;
+        margin-top: 0;
+        color: #000000;
+        line-height: 1.6;
+        max-width: 100%;
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: 0;
+        position: relative;
+        text-align: left;
     }
 
     .Navbar {
-        background-color: #6c757d;
+        background: #ADFF2F;
+        box-shadow: none;
     }
 
     .Navbar a {
-        color: #ffffff;
+        color: #000000;
+        transition: all 0.3s ease;
+        font-weight: 500;
     }
 
     .Navbar a:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #000000;
     }
 
     .Navbar a.active {
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: rgba(0, 0, 0, 0.15);
+        color: #000000;
     }
 }
 
@@ -665,20 +675,24 @@ footer p {
         animation: none;
         position: relative;
         top: 0;
-        background-color: #6c757d;
+        background: #ADFF2F;
+        box-shadow: none;
     }
 
     .Navbar a {
-        color: #ffffff;
+        color: #000000;
+        transition: all 0.3s ease;
+        font-weight: 500;
     }
 
     .Navbar a:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #000000;
     }
 
     .Navbar a.active {
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: rgba(0, 0, 0, 0.15);
+        color: #000000;
     }
 
     /* Mobile hero section - clean and professional */
@@ -699,15 +713,16 @@ footer p {
         animation: none;
         margin-top: 0;
         margin-bottom: 0;
-        padding: 80px 30px;
-        padding-top: 60px;
-        background: #6c757d;
-        min-height: 70vh;
+        padding: 60px 30px;
+        padding-top: 40px;
+        background: #ADFF2F;
+        min-height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        position: relative;
     }
     /* Hide regular nav links on mobile */
     .Navbar .nav-links {
@@ -782,25 +797,30 @@ footer p {
 
 
     #hello-text {
-        font-size: 56px;
-        color: #ffffff;
+        font-size: 48px;
+        color: #000000;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         font-weight: 700;
-        line-height: 1.1;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        line-height: 1.2;
+        text-transform: none;
+        letter-spacing: -1px;
+        text-shadow: none;
+        position: relative;
+        text-align: left;
     }
 
     #introduction-text {
-        font-size: 24px;
-        margin-top: 10px;
-        color: #ffffff;
-        line-height: 1.4;
+        font-size: 18px;
+        margin-top: 0;
+        color: #000000;
+        line-height: 1.6;
         max-width: 100%;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: 0;
+        position: relative;
+        text-align: left;
     }
 
     h2 {
@@ -930,46 +950,59 @@ footer p {
 
     /* Mobile hero section for small phones */
     .Opening_Text {
-        padding: 70px 20px;
-        padding-top: 50px;
-        background: #6c757d;
-        min-height: 65vh;
+        padding: 50px 20px;
+        padding-top: 30px;
+        background: #ADFF2F;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
     }
 
     #hello-text {
-        font-size: 48px;
-        margin-bottom: 10px;
-        color: #ffffff;
+        font-size: 42px;
+        margin-bottom: 15px;
+        color: #000000;
         font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        text-transform: none;
+        letter-spacing: -1px;
+        text-shadow: none;
+        text-align: left;
     }
 
     #introduction-text {
-        font-size: 20px;
-        margin-top: 10px;
-        color: #ffffff;
+        font-size: 16px;
+        margin-top: 0;
+        color: #000000;
         max-width: 100%;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: 0;
+        line-height: 1.6;
+        text-align: left;
     }
 
     .Navbar {
-        background-color: #6c757d;
+        background: #ADFF2F;
+        box-shadow: none;
     }
 
     .Navbar a {
-        color: #ffffff;
+        color: #000000;
+        transition: all 0.3s ease;
+        font-weight: 500;
     }
 
     .Navbar a:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #000000;
     }
 
     .Navbar a.active {
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: rgba(0, 0, 0, 0.15);
+        color: #000000;
     }
 
     #Projects {
