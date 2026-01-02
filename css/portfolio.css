@@ -523,7 +523,7 @@ footer p {
         margin-bottom: 0;
         padding: 80px 50px;
         padding-top: 50px;
-        background: #ADFF2F;
+        background: #FFEB3B;
         min-height: auto;
         display: flex;
         flex-direction: column;
@@ -561,7 +561,7 @@ footer p {
     }
 
     .Navbar {
-        background: #ADFF2F;
+        background: #FFEB3B;
         box-shadow: none;
     }
 
@@ -675,7 +675,7 @@ footer p {
         animation: none;
         position: relative;
         top: 0;
-        background: #ADFF2F;
+        background: #FFEB3B;
         box-shadow: none;
     }
 
@@ -715,7 +715,7 @@ footer p {
         margin-bottom: 0;
         padding: 60px 30px;
         padding-top: 40px;
-        background: #ADFF2F;
+        background: #FFEB3B;
         min-height: auto;
         display: flex;
         flex-direction: column;
@@ -952,7 +952,7 @@ footer p {
     .Opening_Text {
         padding: 50px 20px;
         padding-top: 30px;
-        background: #ADFF2F;
+        background: #FFEB3B;
         min-height: auto;
         display: flex;
         flex-direction: column;
@@ -985,7 +985,7 @@ footer p {
     }
 
     .Navbar {
-        background: #ADFF2F;
+        background: #FFEB3B;
         box-shadow: none;
     }
 
