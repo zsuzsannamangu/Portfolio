@@ -551,7 +551,7 @@ footer p {
         font-size: 20px;
         margin-top: 0;
         color: #000000;
-        line-height: 1.6;
+        line-height: 1.2;
         max-width: 100%;
         font-weight: 400;
         text-transform: none;
@@ -814,7 +814,7 @@ footer p {
         font-size: 18px;
         margin-top: 0;
         color: #000000;
-        line-height: 1.6;
+        line-height: 1.2;
         max-width: 100%;
         font-weight: 400;
         text-transform: none;
@@ -980,7 +980,7 @@ footer p {
         font-weight: 400;
         text-transform: none;
         letter-spacing: 0;
-        line-height: 1.6;
+        line-height: 1.2;
         text-align: left;
     }
 
