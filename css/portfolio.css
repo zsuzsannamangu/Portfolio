@@ -504,36 +504,16 @@ footer p {
 
 /* iPad devices (820px - 1024px) */
 @media (min-width: 820px) and (max-width: 1024px) {
-    /* iPad hero section - image with dark overlay */
     .Home {
-        display: block;
-        position: relative;
-        width: 100%;
-        min-height: 70vh;
-        overflow: hidden;
+        display: none;
     }
 
     #homeimage {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-        z-index: 1;
+        display: none;
     }
 
     .Home::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 2;
+        display: none;
     }
 
     .Opening_Text {
@@ -542,43 +522,42 @@ footer p {
         margin-top: 0;
         margin-bottom: 0;
         padding: 80px 50px;
-        min-height: 70vh;
+        padding-top: 50px;
+        background: #FFEB3B;
+        min-height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
         position: relative;
-        z-index: 3;
-        background: none;
     }
 
     #hello-text {
         font-size: 56px;
-        color: #ffffff;
+        color: #000000;
         margin-top: 0;
         margin-bottom: 20px;
         font-weight: 700;
         line-height: 1.2;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: none;
+        letter-spacing: -1px;
+        text-shadow: none;
         position: relative;
-        text-align: center;
+        text-align: left;
     }
 
     #introduction-text {
         font-size: 20px;
         margin-top: 0;
-        color: #ffffff;
-        line-height: 1.4;
-        max-width: 90%;
+        color: #000000;
+        line-height: 1.2;
+        max-width: 100%;
         font-weight: 400;
         text-transform: none;
         letter-spacing: 0;
         position: relative;
-        text-align: center;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        text-align: left;
     }
 
     .Navbar {
@@ -696,57 +675,37 @@ footer p {
         animation: none;
         position: relative;
         top: 0;
-        background: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(5px);
+        background: #FFEB3B;
         box-shadow: none;
     }
 
     .Navbar a {
-        color: #ffffff;
+        color: #000000;
         transition: all 0.3s ease;
         font-weight: 500;
     }
 
     .Navbar a:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #000000;
     }
 
     .Navbar a.active {
-        background-color: rgba(255, 255, 255, 0.25);
-        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.15);
+        color: #000000;
     }
 
-    /* Mobile hero section - image with dark overlay */
+    /* Mobile hero section - clean and professional */
     .Home {
-        display: block;
-        position: relative;
-        width: 100%;
-        min-height: 70vh;
-        overflow: hidden;
+        display: none;
     }
 
     #homeimage {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-        z-index: 1;
+        display: none;
     }
 
     .Home::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 2;
+        display: none;
     }
 
     .Opening_Text {
@@ -754,16 +713,16 @@ footer p {
         animation: none;
         margin-top: 0;
         margin-bottom: 0;
-        padding: 80px 30px;
-        min-height: 70vh;
+        padding: 60px 30px;
+        padding-top: 40px;
+        background: #FFEB3B;
+        min-height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
         position: relative;
-        z-index: 3;
-        background: none;
     }
     /* Hide regular nav links on mobile */
     .Navbar .nav-links {
@@ -839,30 +798,29 @@ footer p {
 
     #hello-text {
         font-size: 48px;
-        color: #ffffff;
+        color: #000000;
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         font-weight: 700;
         line-height: 1.2;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        text-transform: none;
+        letter-spacing: -1px;
+        text-shadow: none;
         position: relative;
-        text-align: center;
+        text-align: left;
     }
 
     #introduction-text {
         font-size: 18px;
         margin-top: 0;
-        color: #ffffff;
-        line-height: 1.4;
-        max-width: 90%;
+        color: #000000;
+        line-height: 1.2;
+        max-width: 100%;
         font-weight: 400;
         text-transform: none;
         letter-spacing: 0;
         position: relative;
-        text-align: center;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        text-align: left;
     }
 
     h2 {
@@ -990,62 +948,61 @@ footer p {
         font-size: 16px;
     }
 
-    /* Mobile hero section for small phones - image with dark overlay */
+    /* Mobile hero section for small phones */
     .Opening_Text {
-        padding: 60px 20px;
-        min-height: 70vh;
+        padding: 50px 20px;
+        padding-top: 30px;
+        background: #FFEB3B;
+        min-height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: none;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
     }
 
     #hello-text {
         font-size: 42px;
-        margin-bottom: 20px;
-        color: #ffffff;
+        margin-bottom: 15px;
+        color: #000000;
         font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        text-align: center;
+        text-transform: none;
+        letter-spacing: -1px;
+        text-shadow: none;
+        text-align: left;
     }
 
     #introduction-text {
         font-size: 16px;
         margin-top: 0;
-        color: #ffffff;
-        max-width: 90%;
+        color: #000000;
+        max-width: 100%;
         font-weight: 400;
         text-transform: none;
         letter-spacing: 0;
-        line-height: 1.4;
-        text-align: center;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        line-height: 1.2;
+        text-align: left;
     }
 
     .Navbar {
-        background: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(5px);
+        background: #FFEB3B;
         box-shadow: none;
     }
 
     .Navbar a {
-        color: #ffffff;
+        color: #000000;
         transition: all 0.3s ease;
         font-weight: 500;
     }
 
     .Navbar a:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #000000;
     }
 
     .Navbar a.active {
-        background-color: rgba(255, 255, 255, 0.25);
-        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.15);
+        color: #000000;
     }
 
     #Projects {
