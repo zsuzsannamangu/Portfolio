@@ -730,7 +730,7 @@ footer p {
         align-items: flex-start;
         text-align: left;
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 85%;
@@ -811,14 +811,14 @@ footer p {
 
     #hello-text {
         font-size: 48px;
-        color: #000000;
+        color: #ffffff;
         margin-top: 0;
         margin-bottom: 15px;
         font-weight: 700;
         line-height: 1.2;
         text-transform: none;
         letter-spacing: -1px;
-        text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.7);
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
         position: relative;
         text-align: left;
     }
@@ -826,13 +826,13 @@ footer p {
     #introduction-text {
         font-size: 18px;
         margin-top: 0;
-        color: #000000;
+        color: #ffffff;
         line-height: 1.2;
         max-width: 100%;
         font-weight: 400;
         text-transform: none;
         letter-spacing: 0;
-        text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.7);
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.5);
         position: relative;
         text-align: left;
     }
@@ -992,7 +992,7 @@ footer p {
         align-items: flex-start;
         text-align: left;
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 85%;
@@ -1003,24 +1003,24 @@ footer p {
     #hello-text {
         font-size: 42px;
         margin-bottom: 15px;
-        color: #000000;
+        color: #ffffff;
         font-weight: 700;
         text-transform: none;
         letter-spacing: -1px;
-        text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.7);
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
         text-align: left;
     }
 
     #introduction-text {
         font-size: 16px;
         margin-top: 0;
-        color: #000000;
+        color: #ffffff;
         max-width: 100%;
         font-weight: 400;
         text-transform: none;
         letter-spacing: 0;
         line-height: 1.2;
-        text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.7);
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.5);
         text-align: left;
     }
 
