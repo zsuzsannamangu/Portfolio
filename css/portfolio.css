@@ -695,9 +695,16 @@ footer p {
         color: #000000;
     }
 
-    /* Mobile hero section - clean and professional */
+    /* Mobile hero section - using Zsuzsi-66 image */
     .Home {
-        display: none;
+        display: block;
+        position: relative;
+        width: 100%;
+        min-height: 70vh;
+        background-image: url('../Images/Zsuzsi-66.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 
     #homeimage {
@@ -715,11 +722,11 @@ footer p {
         margin-bottom: 0;
         padding: 60px 30px;
         padding-top: 40px;
-        background: #FFEB3B;
-        min-height: auto;
+        background: transparent;
+        min-height: 70vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: flex-start;
         text-align: left;
         position: relative;
@@ -948,17 +955,33 @@ footer p {
         font-size: 16px;
     }
 
-    /* Mobile hero section for small phones */
+    /* Mobile hero section for small phones - using Zsuzsi-66 image */
+    .Home {
+        display: block;
+        position: relative;
+        width: 100%;
+        min-height: 70vh;
+        background-image: url('../Images/Zsuzsi-66.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    #homeimage {
+        display: none;
+    }
+
     .Opening_Text {
         padding: 50px 20px;
         padding-top: 30px;
-        background: #FFEB3B;
-        min-height: auto;
+        background: transparent;
+        min-height: 70vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: flex-start;
         text-align: left;
+        position: relative;
     }
 
     #hello-text {
