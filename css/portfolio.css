@@ -75,13 +75,13 @@ a {
 }
 
 .Navbar a:hover {
-    background-color: #FFEB3B;
+    background-color: #FFC470;
     color: rgb(81, 76, 76);
     font-weight: bold;
 }
 
 .Navbar a.active {
-    background-color: #FFEB3B;
+    background-color: #FFC470;
 }
 
 /*End of Navbar styling*/
@@ -165,7 +165,7 @@ a {
 .projects-separator {
     width: 80px;
     height: 4px;
-    background-color: #FFEB3B;
+    background-color: #FFC470;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -255,7 +255,7 @@ a {
 }
 
 .project-link:hover {
-    color: #FFEB3B;
+    color: #FFC470;
     text-decoration: underline;
 }
 
@@ -403,7 +403,7 @@ a {
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-    background-color: #FFEB3B;
+    background-color: #FFC470;
     color: rgb(81, 76, 76);
     padding: 16px 20px;
     border: none;
@@ -455,7 +455,7 @@ a {
 
 /* Set a style for the submit button */
 .form-container .btn {
-    background-color: #FFEB3B;
+    background-color: #FFC470;
     color: rgb(81, 76, 76);
     padding: 16px 20px;
     border: none;
@@ -523,7 +523,7 @@ footer p {
         margin-bottom: 0;
         padding: 80px 50px;
         padding-top: 50px;
-        background: #FFEB3B;
+        background: #FFC470;
         min-height: auto;
         display: flex;
         flex-direction: column;
@@ -561,7 +561,7 @@ footer p {
     }
 
     .Navbar {
-        background: #FFEB3B;
+        background: #FFC470;
         box-shadow: none;
     }
 
@@ -675,7 +675,7 @@ footer p {
         animation: none;
         position: relative;
         top: 0;
-        background: #FFEB3B;
+        background: #FFC470;
         box-shadow: none;
     }
 
@@ -771,7 +771,7 @@ footer p {
     }
 
     .Navbar .icon:hover {
-        background-color: #FFEB3B;
+        background-color: #FFC470;
     }
 
     .Navbar .icon:hover span {
@@ -802,21 +802,21 @@ footer p {
     }
 
     .Navbar a:hover {
-        background-color: #FFEB3B;
+        background-color: #FFC470;
         color: rgb(81, 76, 76);
     }
 
 
     #hello-text {
         font-size: 48px;
-        color: #000000;
+        color: #ffffff;
         margin-top: 0;
         margin-bottom: 15px;
         font-weight: 700;
         line-height: 1.2;
         text-transform: none;
         letter-spacing: -1px;
-        text-shadow: none;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
         position: relative;
         text-align: left;
     }
@@ -824,12 +824,13 @@ footer p {
     #introduction-text {
         font-size: 18px;
         margin-top: 0;
-        color: #000000;
+        color: #ffffff;
         line-height: 1.2;
         max-width: 100%;
         font-weight: 400;
         text-transform: none;
         letter-spacing: 0;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.5);
         position: relative;
         text-align: left;
     }
@@ -1000,28 +1001,29 @@ footer p {
     #hello-text {
         font-size: 42px;
         margin-bottom: 15px;
-        color: #000000;
+        color: #ffffff;
         font-weight: 700;
         text-transform: none;
         letter-spacing: -1px;
-        text-shadow: none;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
         text-align: left;
     }
 
     #introduction-text {
         font-size: 16px;
         margin-top: 0;
-        color: #000000;
+        color: #ffffff;
         max-width: 100%;
         font-weight: 400;
         text-transform: none;
         letter-spacing: 0;
         line-height: 1.2;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.5);
         text-align: left;
     }
 
     .Navbar {
-        background: #FFEB3B;
+        background: #FFC470;
         box-shadow: none;
     }
 
