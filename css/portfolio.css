@@ -718,10 +718,8 @@ footer p {
     .Opening_Text {
         -webkit-animation: none;
         animation: none;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 60px 30px;
-        padding-top: 40px;
+        margin: 0 auto;
+        padding: 30px 25px;
         background: rgba(255, 255, 255, 0.85);
         min-height: auto;
         display: flex;
@@ -731,9 +729,11 @@ footer p {
         text-align: left;
         position: absolute;
         top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        max-width: 500px;
+        border-radius: 12px;
         z-index: 2;
     }
     /* Hide regular nav links on mobile */
@@ -981,8 +981,7 @@ footer p {
     }
 
     .Opening_Text {
-        padding: 50px 20px;
-        padding-top: 30px;
+        padding: 25px 20px;
         background: rgba(255, 255, 255, 0.85);
         min-height: auto;
         display: flex;
@@ -992,9 +991,11 @@ footer p {
         text-align: left;
         position: absolute;
         top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        max-width: 450px;
+        border-radius: 12px;
         z-index: 2;
     }
 
