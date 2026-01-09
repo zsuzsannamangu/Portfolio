@@ -132,14 +132,14 @@ a {
 }
 
 #hello-text {
-    color: #FFEB3B;
+    color: #FFC470;
     margin-top: 8%;
     font-size: 90px;
 }
 
 #introduction-text {
     text-align: center;
-    color: #FFEB3B;
+    color: #FFC470;
     font-size: 25px;
 }
 
@@ -720,7 +720,7 @@ footer p {
         animation: none;
         margin: 0 auto;
         padding: 20px 25px;
-        background: rgba(255, 255, 255, 0.85);
+        background: transparent;
         min-height: auto;
         display: flex;
         flex-direction: column;
@@ -733,7 +733,6 @@ footer p {
         transform: translate(-50%, -50%);
         width: 85%;
         max-width: 500px;
-        border-radius: 12px;
         z-index: 2;
     }
     /* Hide regular nav links on mobile */
@@ -982,7 +981,7 @@ footer p {
 
     .Opening_Text {
         padding: 15px 20px;
-        background: rgba(255, 255, 255, 0.85);
+        background: transparent;
         min-height: auto;
         display: flex;
         flex-direction: column;
@@ -995,7 +994,6 @@ footer p {
         transform: translate(-50%, -50%);
         width: 85%;
         max-width: 450px;
-        border-radius: 12px;
         z-index: 2;
     }
 
