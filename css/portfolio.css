@@ -75,13 +75,13 @@ a {
 }
 
 .Navbar a:hover {
-    background-color: rgb(255, 196, 112);
+    background-color: #FFEB3B;
     color: rgb(81, 76, 76);
     font-weight: bold;
 }
 
 .Navbar a.active {
-    background-color: rgb(255, 196, 112);
+    background-color: #FFEB3B;
 }
 
 /*End of Navbar styling*/
@@ -132,14 +132,14 @@ a {
 }
 
 #hello-text {
-    color: #FFC470;
+    color: #FFEB3B;
     margin-top: 8%;
     font-size: 90px;
 }
 
 #introduction-text {
     text-align: center;
-    color: #FFC470;
+    color: #FFEB3B;
     font-size: 25px;
 }
 
@@ -165,7 +165,7 @@ a {
 .projects-separator {
     width: 80px;
     height: 4px;
-    background-color: rgb(255, 196, 112);
+    background-color: #FFEB3B;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -255,7 +255,7 @@ a {
 }
 
 .project-link:hover {
-    color: rgb(255, 196, 112);
+    color: #FFEB3B;
     text-decoration: underline;
 }
 
@@ -403,7 +403,7 @@ a {
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-    background-color: rgb(255, 196, 112);
+    background-color: #FFEB3B;
     color: rgb(81, 76, 76);
     padding: 16px 20px;
     border: none;
@@ -455,7 +455,7 @@ a {
 
 /* Set a style for the submit button */
 .form-container .btn {
-    background-color: rgb(255, 196, 112);
+    background-color: #FFEB3B;
     color: rgb(81, 76, 76);
     padding: 16px 20px;
     border: none;
@@ -719,7 +719,7 @@ footer p {
         -webkit-animation: none;
         animation: none;
         margin: 0 auto;
-        padding: 30px 25px;
+        padding: 20px 25px;
         background: rgba(255, 255, 255, 0.85);
         min-height: auto;
         display: flex;
@@ -772,7 +772,7 @@ footer p {
     }
 
     .Navbar .icon:hover {
-        background-color: rgb(255, 196, 112);
+        background-color: #FFEB3B;
     }
 
     .Navbar .icon:hover span {
@@ -803,7 +803,7 @@ footer p {
     }
 
     .Navbar a:hover {
-        background-color: rgb(255, 196, 112);
+        background-color: #FFEB3B;
         color: rgb(81, 76, 76);
     }
 
@@ -981,7 +981,7 @@ footer p {
     }
 
     .Opening_Text {
-        padding: 25px 20px;
+        padding: 15px 20px;
         background: rgba(255, 255, 255, 0.85);
         min-height: auto;
         display: flex;
